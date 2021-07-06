@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --azul-claro: #007aff;
+    --azul-escuro: #00043e;
+    --cinza: #303030;
+    --cinza-claro: #818181;
+}
+
+.topo, .secaoDestaque {
+    display: flex;
+    background-color: var(--azul-escuro);
+    align-items: center;
+}
+
+.topo nav {
+    display: none;
+}
+
+.large-container {
+    width: 100%;
+}
+
+.header-image{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo figcaption {
+    opacity: 0;
+}
+
+.logo img {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu img {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.secaoDestaque {
+    flex-direction: column;
+    color: white;
+}
+
+.secaoDestaque h2 {
+    font-size: 2.8em;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.secaoDestaque p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.secaoDestaqueFormulario {
+    display: flex;
+    width: 70%;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.secaoDestaqueFormulario input {
+    border: 0;
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+}
+
+.secaoDestaqueFormulario button {
+    border: 0;
+    width: 30%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+}
