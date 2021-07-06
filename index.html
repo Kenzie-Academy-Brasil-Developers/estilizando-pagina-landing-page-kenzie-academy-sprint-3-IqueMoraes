@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="icon-96x96.webp">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
@@ -13,9 +13,9 @@
   <!-- CABEÇALHO -->
   <header class="topo">
 
-    <div class="large-container">
+    <div class="large-container"> -->
       <!-- LOGO -->
-      <figure>
+      <!-- <figure>
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
         <figcaption>Logo Kenzie Academy</figcaption>  
       </figure>
@@ -33,7 +33,7 @@
   </header>
 
   <!-- PÁGINA INICIAL -->
-  <main class="inicial">
+  <!-- <main class="inicial"> -->
 
     <!-- ÁREA DE DESTAQUE -->
     <section class="secaoDestaque">
@@ -53,9 +53,11 @@
     <section class="secaoSobre">
 
       <article class="flex">
+      <!-- SOBRE PARTE 1 -->
+      <div class="flex-col primeiraCol">
         
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="primeiraCol--texto">
 
           <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
@@ -68,27 +70,30 @@
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="primeiraCol--imagem">
 
           <figure>
-            <img src="assets/img/python.png" alt="python">
+            <img src="assets/img/python.png" alt="python" class="pySobre">
             <figcaption>python</figcaption>  
           </figure>      
 
         </div>
+      </div>
 
+      <!-- SOBRE PARTE 2 -->
+      <div class="flex-col segundaCol">
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="segundaCol--imagem">
 
             <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
+              <img src="assets/img/JavaScript-logo.png" alt="Java Script" class="jsSobre">
               <figcaption>Java Script</figcaption>  
             </figure>      
   
-          </div>
+        </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="segundaCol--texto">
 
             <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
             <ul>
@@ -100,7 +105,7 @@
             </ul>
 
         </div>
-
+      </div>
         
 
       </article>
@@ -112,8 +117,10 @@
 
       <article>
 
+        <div class="secaoCursos--titulo">
         <h2>COURSES</h2>
         <p>What we offer</p>
+        </div>
 
         <!-- LISTA DE CURSOS -->
         <ul>

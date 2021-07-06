@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--corBranco: #FFFFFF;
+    --corAzulClaro: #007aff;
+    --corAzulEscuro: #00043e;
+    --corCinza: #303030;
+    --corCinzaClaro: #818181;
+}
+
+/*-------Header------*/
+/*------Destaque-----*/
+
+
+/*-----Sobre-----*/
+
+body {
+    font-family: Lato, sans-serif;
+	
+}
+img {
+	width: 100vw;
+	object-fit: contain;
+}
+.secaoSobre {
+	width: 100vw;
+    font-size: 19px;
+	/* display:flex;
+	flex-flow: column nowrap;
+	align-items: center; */
+
+}
+.secaoSobre h2{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.flex {
+}
+
+.flex-col {
+	display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-col figcaption {
+	display: none;
+}
+
+
+.primeiraCol {
+	background-color: var(--corBranco);
+	padding-top: 5em;
+	padding-bottom: 4em;
+
+}
+.primeiraCol--texto {
+	width: 70%;
+}
+.primeiraCol--texto p {
+	padding-top: 3em;
+	padding-bottom: 2em;
+	line-height: 1.5em;
+}
+
+.primeiraCol--texto span {
+	color:var(--corCinzaClaro);
+	line-height: 1.8em;
+}
+
+.primeiraCol--texto button {
+    width: 100%;
+	height: 2.5em;
+	margin-top:65px;
+	margin-bottom: 2em;
+	border-radius: 6px;
+	border: 2px solid var(--corCinzaClaro);
+	background-color: var(--corBranco);
+	font-weight: thick;
+	font-size:19px;
+}
+
+.primeiraCol--imagem figure{
+	display: flex;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+.primeiraCol--imagem figure img {
+	width: 70%;
+	object-fit: contain;
+}
+
+
+
+
+.segundaCol {
+	background-color: var(--corCinzaClaro);
+	color: var(--corCinza);
+	padding-top: 3.5em;
+	padding-bottom: 3em;
+}
+
+.segundaCol--imagem figure{
+	display: flex;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+.segundaCol--imagem figure img{
+	width: 30%;
+}
+
+.segundaCol--texto h2{
+	padding-top:1em;
+	padding-bottom: 2em;
+
+}
+.segundaCol--texto {
+	width: 50%;
+	
+}
+
+.segundaCol--texto ul {
+	list-style: disc;
+}
+
+.segundaCol--texto ul li{
+	line-height: 1.5em;
+}
+
+
+/*---CURSOS---*/
+
