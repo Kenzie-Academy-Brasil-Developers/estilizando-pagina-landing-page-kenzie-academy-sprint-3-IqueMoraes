@@ -96,6 +96,7 @@ h2 {
 }
 
 .secaoDestaque {
+	display: flex;
     flex-direction: column;
     color: white;
 }
@@ -272,7 +273,7 @@ img {
 }
 .secaoCursos--lista li {
 	text-align: center;
-	font-size: 15px
+	font-size: 1rem;
 }
 .secaoCursos--lista p{
 	padding-top: 1.5em;
@@ -281,7 +282,7 @@ img {
 	color: var(--cinza-claro);
 }
 .secaoCursos--lista h3 {
-	font-size: 19px;
+	font-size: 1.2rem;
 	padding-top: 0.6em;
 }
 .secaoCursos--lista img {
@@ -380,6 +381,8 @@ img[alt="logo django"] {
 	border-radius: 5px;
 	font-size: 1.2em;
 	color: var(--branco);
+	border: 3px solid var(--branco);
+}
 
 /*----CONTATO ---*/
 
@@ -510,5 +513,141 @@ input[type="submit"]:hover {
 	padding: 0.8 1rem;
 	color: var(--cinza);
 	font-size: 1rem;
+
+}
+
+
+footer {
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	color: var(--azul-claro);
+	font-size: 1.5em;
+	margin-top: 60px;
+	margin-bottom: 15px;
+}
+
+footer p {
+	display : none;
+}
+
+@media only screen and (min-width: 1023px) {
+	
+	.menu img {
+		display: none;
+	}
+
+	.large-container{ 
+		display: flex;
+	}
+
+	.header-image {
+		width: 50%;
+	}
+	
+	.logo img {
+		margin-left: 10vw;
+		max-width: 5vw;
+	}
+	
+	.topo nav {
+		display: flex;
+		width: 50%;
+	}
+
+	.topo nav ul {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.topo nav ul li {
+		display:flex;
+		margin: auto 10px;
+		font-size: 13px;
+	}
+
+	.topo li a {
+		text-decoration: none;
+		color: var(--branco);
+		border-bottom: 1px solid var(--azul-escuro);
+		padding-bottom: 3px;
+	}
+
+	.topo li a:hover {
+		border-bottom: 1px solid var(--branco);
+		border-radius: 1px;
+		padding-bottom: 3px;
+		transition: 0.5s;
+	}
+
+	.secaoDestaque {
+		width: 100vw;
+		padding-top: 150px;
+		padding-bottom: 150px;
+		background-image: url(../img/background-destaque.webp);
+		background-size: cover;
+	}
+
+	.secaoDestaque h2 {
+		font-size: 63px;
+	}
+
+	.secaoDestaque p {
+		font-size: 21px;
+	}
+
+	.secaoDestaqueFormulario {
+		max-width: 500px;
+	}
+
+	.secaoDestaqueFormulario button {
+		font-size: 14px;
+	}
+
+	.secaoDestaqueFormulario button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 2px solid var(--azul-claro);
+		cursor: pointer;
+	}
+
+
+	.calendario {
+		display: flex;
+		flex-direction: row;
+		width: 80vw;
+		justify-content: center;
+		padding-left: 20px;
+	}
+
+	.calendario-data {
+		font-size: 36px;
+	}
+
+	.calendario li {
+		width: 28em;
+		margin-right: 20px;
+	}
+
+	.calendario li h3 {
+		font-size: 19px;
+	}
+
+	.calendario li p {
+		font-size: 15px;
+	}
+
+	.calendario .calendario-data-rodape button {
+		font-size: 32px;
+		max-width: 150px;
+	}
+
+	.calendario-data-rodape button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 3px solid var(--azul-claro);
+		cursor: pointer;
+	}
 
 }
