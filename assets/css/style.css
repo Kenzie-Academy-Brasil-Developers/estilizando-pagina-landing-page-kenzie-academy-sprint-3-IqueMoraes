@@ -191,7 +191,8 @@ img {
 	margin-top:65px;
 	margin-bottom: 2em;
 	border-radius: 6px;
-	border: 2px solid var(--cinza-claro);
+
+	border: 2px solid #81818135;
 	background-color: var(--branco);
 	font-weight: thick;
 	font-size:19px;
@@ -207,12 +208,11 @@ img {
 	object-fit: contain;
 }
 
-
-
-
 .segundaCol {
-	background-color: var(--cinza-claro);
-	color: var(--cinza);
+
+	background-color: var(--cinza-claro-transparente);
+	color: var(--cinza-claro);
+
 	padding-top: 3.5em;
 	padding-bottom: 3em;
 }
@@ -229,6 +229,8 @@ img {
 .segundaCol--texto h2{
 	padding-top:1em;
 	padding-bottom: 2em;
+	color: black;
+	text-align: center;
 
 }
 .segundaCol--texto {
@@ -242,6 +244,59 @@ img {
 .segundaCol--texto ul li{
 	line-height: 1.5em;
 }
+
+
+/*--- cursos ---*/
+.secaoCursos, .secaoCursos article,  .secaoCursos--titulo, .secaoCursos article ul{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	
+}
+
+.secaoCursos {
+	width: 100vw;
+	padding-top: 5em;
+}
+.secaoCursos article {
+	width: 70%;
+}
+.secaoCursos--titulo h2{
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.secaoCursos--titulo p {
+	font-size: 1.5em;
+	padding-top: 1.5em;
+	padding-bottom: 3.5em;
+}
+.secaoCursos--lista li {
+	text-align: center;
+	font-size: 15px
+}
+.secaoCursos--lista p{
+	padding-top: 1.5em;
+	line-height: 2em;
+	padding-bottom: 2em;
+	color: var(--cinza-claro);
+}
+.secaoCursos--lista h3 {
+	font-size: 19px;
+	padding-top: 0.6em;
+}
+.secaoCursos--lista img {
+	width: 40%;
+}
+
+img[alt="logo html e css"] {
+	width: 45%;
+}
+
+img[alt="logo django"] {
+	width: 40%;
+}
+
+/*----- CALENDÁRIO ----*/
 
 .secaoCalendar {
 	display: flex;
@@ -325,4 +380,135 @@ img {
 	border-radius: 5px;
 	font-size: 1.2em;
 	color: var(--branco);
+
+/*----CONTATO ---*/
+
+.secaoContato {
+	background-color: var(--cinza-claro-transparente);
+	padding-top: 5em;
+	padding-bottom: 3em;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.flex__contato {
+	width: 70%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.secaoContato h2{
+	font-size: 1.5em;
+	font-weight: bolder;
+	padding-bottom: 1.5em;
+}
+
+.contato--primeiro p {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: var(--cinza-claro);
+}
+
+.secaoContato-informacoes i{
+	color:var(--cinza-claro);
+	text-align: center;
+	margin:0 0.6rem;
+}
+
+
+.secaoContato-informacoes i {
+	width: 1rem;
+	object-fit: contain;
+}
+
+.contato--primeiro a {
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: var(--cinza-claro);
+}
+.contato--primeiro a:hover {
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: var(--cinza-claro);
+	border-radius: 4px;
+	box-shadow: 0 0 3pt 2pt var(--cinza-claro);
+}
+
+.contato--segundo, .contato--segundo form, .form-input-model, .form-input-model input,  .form-input-model textarea{
+	width: 100%;
+}
+
+.form-input-model input, .form-input-model textarea, .botato--contato{
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 4px;
+	border: 2px solid #81818135;
+	color: var(--cinza);
+	font-weight: bold;
+	font-size: 1rem;
+	padding-left: 1rem;
+
+}
+
+.form-input-model textarea {
+	height: 8rem;
+}
+
+.form-input-model input::placeholder {
+	
+	font-family: inherit;
+	font-size: 1rem;
+	color: #81818177;
+	
+}
+.form-input-model input:focus {
+	outline: none;
+	box-shadow: 0 0 0 2pt var(--azul-escuro);
+	transition: 0.5s;
+	
+}
+.form-input-model textarea::placeholder {
+	
+	padding-top:0.5rem;
+	font-family: inherit;
+	font-size: 1rem;
+	color: #81818177;
+}
+.form-input-model textarea:focus{
+	outline: none;
+	box-shadow: 0 0 0 2pt var(--azul-escuro);
+	transition: 0.5s;
+}
+
+.contato--segundo form, .form-input-model{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input[type="submit"] {
+	background-color: var(--branco);
+	align-self: flex-end;
+	margin: 0.5rem 0;
+	border-radius: 4px;
+	border: 2px solid #81818135;
+	padding: 0.8 1rem;
+	color: var(--cinza);
+	font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--cinza-claro);
+	align-self: flex-end;
+	margin: 0.5rem 0;
+	border-radius: 4px;
+	border: 2px solid #81818135;
+	padding: 0.8 1rem;
+	color: var(--cinza);
+	font-size: 1rem;
+
 }
