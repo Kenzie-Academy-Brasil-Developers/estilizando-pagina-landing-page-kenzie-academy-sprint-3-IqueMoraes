@@ -144,7 +144,7 @@ img {
 }
 .secaoSobre {
 	width: 100vw;
-    font-size: 19px;
+    font-size: 1.2rem;
 	/* display:flex;
 	flex-flow: column nowrap;
 	align-items: center; */
@@ -165,9 +165,11 @@ img {
 	display: none;
 }
 
-
-.primeiraCol {
+.backgroundcolor-branco {
 	background-color: var(--branco);
+}
+.primeiraCol {
+	
 	padding-top: 5em;
 	padding-bottom: 4em;
 
@@ -209,9 +211,11 @@ img {
 	object-fit: contain;
 }
 
-.segundaCol {
-
+.backgroundcolor-cinza {
 	background-color: var(--cinza-claro-transparente);
+
+}
+.segundaCol {
 	color: var(--cinza-claro);
 
 	padding-top: 3.5em;
@@ -248,11 +252,19 @@ img {
 
 
 /*--- cursos ---*/
-.secaoCursos, .secaoCursos article,  .secaoCursos--titulo, .secaoCursos article ul{
+.secaoCursos, .secaoCursos article {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	
+}
+.secaoCursos--titulo {
+	text-align: center;
+}
+.secaoCursos--lista ul {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
 }
 
 .secaoCursos {
@@ -390,6 +402,7 @@ img[alt="logo django"] {
 	background-color: var(--cinza-claro-transparente);
 	padding-top: 5em;
 	padding-bottom: 3em;
+	margin: 5em;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -513,26 +526,24 @@ input[type="submit"]:hover {
 	padding: 0.8 1rem;
 	color: var(--cinza);
 	font-size: 1rem;
-
 }
-
 
 footer {
-	display: flex; 
-	flex-direction: column;
-	align-items: center;
-	color: var(--azul-claro);
-	font-size: 1.5em;
-	margin-top: 60px;
-	margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--azul-claro);
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+footer p {
+    display : none;
 }
 
-footer p {
-	display : none;
-}
 
 @media only screen and (min-width: 1023px) {
-	
+  
 	.menu img {
 		display: none;
 	}
@@ -612,8 +623,7 @@ footer p {
 		cursor: pointer;
 	}
 
-
-	.calendario {
+  .calendario {
 		display: flex;
 		flex-direction: row;
 		width: 80vw;
@@ -697,5 +707,134 @@ footer p {
 
 	.contato--segundo .botao--contato {
 		margin-left: 93.5%;
+	}
+
+  .secaoSobre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 19px;
+	
+	}
+	.secaoSobre h2{
+		font-size: 24px;
+	}
+	.flex {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.flex-col {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.backgroundcolor-branco {
+		width:100vw;
+		display: flex;
+		flex-flow:column nowrap;
+		align-items: center;
+
+	}
+	.primeiraCol {
+		width: 70%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.primeiraCol--texto {
+		width: 70%;
+		display: flex;
+		flex-flow: column;
+	}
+
+
+	.primeiraCol--texto button {
+		width: 30%;
+	}
+	
+	.primeiraCol--imagem figure{
+		display: flex;
+		flex-flow:column nowrap;
+		justify-content: flex-start;
+	}
+	.primeiraCol--imagem figure img {
+		width: 100%;
+		object-fit: contain;
+	}
+	
+
+	.backgroundcolor-cinza {
+		width: 100vw;
+		background-color: var(--cinza-claro-transparente);
+		display: flex;
+		flex-flow:column nowrap;
+		align-items: center;
+	}
+	.segundaCol{
+		width: 70%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.segundaCol--imagem {
+		width: 50%;
+	}
+	.segundaCol--imagem figure{
+		display: flex;
+		flex-flow:column nowrap;
+		align-items:flex-start;
+	}
+	.segundaCol--imagem figure img{
+		width: 55%;
+	}
+	
+
+	.segundaCol--texto h2{
+		padding-top:0em;
+
+	
+	}
+	.segundaCol--texto {
+		width: 50%;
+		
+	}
+	
+	/*---CURSOS---*/
+
+	.secaoCursos{
+		width: 100vw;
+	}
+	.secaoCursos p {
+		font-size: 19px;
+	}
+	.secaoCursos h2{
+		font-size: 24px;
+	}
+
+	.secaoCursos--lista ul {
+		width:100vw;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.secaoCursos--lista li {
+		width: 28%;
+	}
+	
+	.secaoCursos h3 {
+		font-size: 19px;
+	}
+
+	.secaoCursos li p {
+		font-size: 15px;
 	}
 }
