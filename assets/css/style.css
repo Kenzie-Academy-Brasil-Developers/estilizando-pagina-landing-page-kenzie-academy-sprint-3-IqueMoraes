@@ -402,7 +402,6 @@ img[alt="logo django"] {
 	background-color: var(--cinza-claro-transparente);
 	padding-top: 5em;
 	padding-bottom: 3em;
-	margin: 5em;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
