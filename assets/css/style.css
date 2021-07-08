@@ -623,93 +623,11 @@ footer p {
 		cursor: pointer;
 	}
 
-  .calendario {
-		display: flex;
-		flex-direction: row;
-		width: 80vw;
-		justify-content: center;
-		padding-left: 20px;
-	}
-
-	.calendario-data {
-		font-size: 36px;
-	}
-
-	.calendario li {
-		width: 28em;
-		margin-right: 20px;
-	}
-
-	.calendario li h3 {
-		font-size: 19px;
-	}
-
-	.calendario li p {
-		font-size: 15px;
-	}
-
-	.calendario .calendario-data-rodape button {
-		font-size: 32px;
-		max-width: 150px;
-	}
-
-	.calendario-data-rodape button:hover {
-		background-color: var(--branco);
-		color: var(--azul-claro);
-		border: 3px solid var(--azul-claro);
-		cursor: pointer;
-	}
-
 	.secaoCursos--lista {
 		display: flex;
 		
 	}
-
-	.secaoContato {
-		margin-top: 80px;
-	}
-
-	.flex__contato {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-	}
-
-	.flex__contato h2  {
-	width: 100%;
-	text-align: center;
-	}
-
-	.contato--primeiro {
-		max-width: 45%;
-	}
-
-	.contato--segundo {
-		max-width: 45%;
-	}
-
-	.flex__contato form {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	}
-
-	.form-input-model {
-		width: 45%;
-	}
-
-	div#mensagem {
-		width: 100%;
-	}
-
-	.contato--segundo .botao--contato {
-		margin-left: 93.5%;
-	}
-
-  .secaoSobre {
+  	.secaoSobre {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -804,7 +722,7 @@ footer p {
 		width: 50%;
 		
 	}
-	
+
 	/*---CURSOS---*/
 
 	.secaoCursos{
@@ -836,5 +754,109 @@ footer p {
 
 	.secaoCursos li p {
 		font-size: 15px;
+	}
+
+  	.calendario {
+		display: flex;
+		flex-direction: row;
+		width: 80vw;
+		justify-content: center;
+		padding-left: 20px;
+	}
+
+	.calendario-data {
+		font-size: 36px;
+	}
+
+	.calendario li {
+		width: 28em;
+		margin-right: 20px;
+	}
+
+	.calendario li h3 {
+		font-size: 19px;
+	}
+
+	.calendario li p {
+		font-size: 15px;
+	}
+
+	.calendario .calendario-data-rodape button {
+		font-size: 32px;
+		max-width: 150px;
+	}
+
+	.calendario-data-rodape button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 3px solid var(--azul-claro);
+		cursor: pointer;
+	}
+
+	.secaoContato {
+		margin-top: 80px;
+	}
+
+	.flex__contato {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+	}
+
+	.flex__contato h2  {
+	width: 100%;
+	text-align: center;
+	}
+
+	.contato--primeiro {
+		max-width: 45%;
+	}
+
+	.contato--segundo {
+		max-width: 45%;
+	}
+
+	.flex__contato form {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+	.form-input-model {
+		width: 45%;
+	}
+
+	div#mensagem {
+		width: 100%;
+	}
+
+	.contato--segundo .botao--contato {
+		margin-left: 93.5%;
+	}
+
+	.contato--segundo .botao--contato:hover {
+		margin-left: 93.5%;
+		cursor: pointer;
+	}
+
+	footer p{
+		display: block;
+		color: var(--cinza-claro);
+	}
+
+	footer p a{
+		text-decoration: none;
+	}
+
+	footer a:visited {
+		color: var(--azul-claro);
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
