@@ -96,6 +96,7 @@ h2 {
 }
 
 .secaoDestaque {
+	display: flex;
     flex-direction: column;
     color: white;
 }
@@ -284,7 +285,7 @@ img {
 }
 .secaoCursos--lista li {
 	text-align: center;
-	font-size: 15px
+	font-size: 1rem;
 }
 .secaoCursos--lista p{
 	padding-top: 1.5em;
@@ -293,7 +294,7 @@ img {
 	color: var(--cinza-claro);
 }
 .secaoCursos--lista h3 {
-	font-size: 19px;
+	font-size: 1.2rem;
 	padding-top: 0.6em;
 }
 .secaoCursos--lista img {
@@ -392,7 +393,9 @@ img[alt="logo django"] {
 	border-radius: 5px;
 	font-size: 1.2em;
 	color: var(--branco);
+	border: 3px solid var(--branco);
 }
+
 /*----CONTATO ---*/
 
 .secaoContato {
@@ -540,193 +543,173 @@ footer p {
 
 
 @media only screen and (min-width: 1023px) {
+  
+	.menu img {
+		display: none;
+	}
+
+	.large-container{ 
+		display: flex;
+	}
+
+	.header-image {
+		width: 50%;
+	}
 	
+	.logo img {
+		margin-left: 10vw;
+		max-width: 5vw;
+	}
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	.secaoSobre {
+	.topo nav {
+		display: flex;
+		width: 50%;
+	}
+
+	.topo nav ul {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.topo nav ul li {
+		display:flex;
+		margin: auto 10px;
+		font-size: 13px;
+	}
+
+	.topo li a {
+		text-decoration: none;
+		color: var(--branco);
+		border-bottom: 1px solid var(--azul-escuro);
+		padding-bottom: 3px;
+	}
+
+	.topo li a:hover {
+		border-bottom: 1px solid var(--branco);
+		border-radius: 1px;
+		padding-bottom: 3px;
+		transition: 0.5s;
+	}
+
+	.secaoDestaque {
+		width: 100vw;
+		padding-top: 150px;
+		padding-bottom: 150px;
+		background-image: url(../img/background-destaque.webp);
+		background-size: cover;
+	}
+
+	.secaoDestaque h2 {
+		font-size: 63px;
+	}
+
+	.secaoDestaque p {
+		font-size: 21px;
+	}
+
+	.secaoDestaqueFormulario {
+		max-width: 500px;
+	}
+
+	.secaoDestaqueFormulario button {
+		font-size: 14px;
+	}
+
+	.secaoDestaqueFormulario button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 2px solid var(--azul-claro);
+		cursor: pointer;
+	}
+
+  .calendario {
+		display: flex;
+		flex-direction: row;
+		width: 80vw;
+		justify-content: center;
+		padding-left: 20px;
+	}
+
+	.calendario-data {
+		font-size: 36px;
+	}
+
+	.calendario li {
+		width: 28em;
+		margin-right: 20px;
+	}
+
+	.calendario li h3 {
+		font-size: 19px;
+	}
+
+	.calendario li p {
+		font-size: 15px;
+	}
+
+	.calendario .calendario-data-rodape button {
+		font-size: 32px;
+		max-width: 150px;
+	}
+
+	.calendario-data-rodape button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 3px solid var(--azul-claro);
+		cursor: pointer;
+	}
+
+	.secaoCursos--lista {
+		display: flex;
+		
+	}
+
+	.secaoContato {
+		margin-top: 80px;
+	}
+
+	.flex__contato {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+	}
+
+	.flex__contato h2  {
+	width: 100%;
+	text-align: center;
+	}
+
+	.contato--primeiro {
+		max-width: 45%;
+	}
+
+	.contato--segundo {
+		max-width: 45%;
+	}
+
+	.flex__contato form {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+	.form-input-model {
+		width: 45%;
+	}
+
+	div#mensagem {
+		width: 100%;
+	}
+
+	.contato--segundo .botao--contato {
+		margin-left: 93.5%;
+	}
+
+  .secaoSobre {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -854,11 +837,4 @@ footer p {
 	.secaoCursos li p {
 		font-size: 15px;
 	}
-
-
-
-
-
-
-	
 }
