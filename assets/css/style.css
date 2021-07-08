@@ -650,4 +650,52 @@ footer p {
 		cursor: pointer;
 	}
 
+	.secaoCursos--lista {
+		display: flex;
+		
+	}
+
+	.secaoContato {
+		margin-top: 80px;
+	}
+
+	.flex__contato {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+	}
+
+	.flex__contato h2  {
+	width: 100%;
+	text-align: center;
+	}
+
+	.contato--primeiro {
+		max-width: 45%;
+	}
+
+	.contato--segundo {
+		max-width: 45%;
+	}
+
+	.flex__contato form {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+	.form-input-model {
+		width: 45%;
+	}
+
+	div#mensagem {
+		width: 100%;
+	}
+
+	.contato--segundo .botao--contato {
+		margin-left: 93.5%;
+	}
 }
