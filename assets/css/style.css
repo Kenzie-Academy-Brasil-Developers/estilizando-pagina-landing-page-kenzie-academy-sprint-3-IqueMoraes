@@ -1,0 +1,861 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --azul-claro: #007aff;
+    --azul-escuro: #00043e;
+    --cinza: #303030;
+    --cinza-claro: #818181;
+	--cinza-claro-transparente: #81818115;
+}
+
+.topo, .secaoDestaque {
+    display: flex;
+    background-color: var(--azul-escuro);
+    align-items: center;
+}
+
+.topo nav {
+    display: none;
+}
+
+.large-container {
+    width: 100%;
+}
+
+.header-image{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo figcaption {
+    opacity: 0;
+}
+
+.logo img {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu img {
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.secaoDestaque {
+	display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.secaoDestaque h2 {
+    font-size: 2.8em;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.secaoDestaque p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.secaoDestaqueFormulario {
+    display: flex;
+    width: 70%;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.secaoDestaqueFormulario input {
+    border: 0;
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+}
+
+.secaoDestaqueFormulario button {
+    border: 0;
+    width: 30%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+}
+
+img {
+	width: 100vw;
+	object-fit: contain;
+}
+.secaoSobre {
+	width: 100vw;
+    font-size: 1.2rem;
+	/* display:flex;
+	flex-flow: column nowrap;
+	align-items: center; */
+
+}
+.secaoSobre h2{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.flex-col {
+	display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-col figcaption {
+	display: none;
+}
+
+.backgroundcolor-branco {
+	background-color: var(--branco);
+}
+.primeiraCol {
+	
+	padding-top: 5em;
+	padding-bottom: 4em;
+
+}
+.primeiraCol--texto {
+	width: 70%;
+}
+.primeiraCol--texto p {
+	padding-top: 3em;
+	padding-bottom: 2em;
+	line-height: 1.5em;
+}
+
+.primeiraCol--texto span {
+	color:var(--cinza-claro);
+	line-height: 1.8em;
+}
+
+.primeiraCol--texto button {
+    width: 100%;
+	height: 2.5em;
+	margin-top:65px;
+	margin-bottom: 2em;
+	border-radius: 6px;
+
+	border: 2px solid #81818135;
+	background-color: var(--branco);
+	font-weight: thick;
+	font-size:19px;
+}
+
+.primeiraCol--imagem figure{
+	display: flex;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+.primeiraCol--imagem figure img {
+	width: 70%;
+	object-fit: contain;
+}
+
+.backgroundcolor-cinza {
+	background-color: var(--cinza-claro-transparente);
+
+}
+.segundaCol {
+	color: var(--cinza-claro);
+
+	padding-top: 3.5em;
+	padding-bottom: 3em;
+}
+
+.segundaCol--imagem figure{
+	display: flex;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+.segundaCol--imagem figure img{
+	width: 30%;
+}
+
+.segundaCol--texto h2{
+	padding-top:1em;
+	padding-bottom: 2em;
+	color: black;
+	text-align: center;
+
+}
+.segundaCol--texto {
+	width: 50%;
+}
+
+.segundaCol--texto ul {
+	list-style: disc;
+}
+
+.segundaCol--texto ul li{
+	line-height: 1.5em;
+}
+
+
+/*--- cursos ---*/
+.secaoCursos, .secaoCursos article {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	
+}
+.secaoCursos--titulo {
+	text-align: center;
+}
+.secaoCursos--lista ul {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.secaoCursos {
+	width: 100vw;
+	padding-top: 5em;
+}
+.secaoCursos article {
+	width: 70%;
+}
+.secaoCursos--titulo h2{
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.secaoCursos--titulo p {
+	font-size: 1.5em;
+	padding-top: 1.5em;
+	padding-bottom: 3.5em;
+}
+.secaoCursos--lista li {
+	text-align: center;
+	font-size: 1rem;
+}
+.secaoCursos--lista p{
+	padding-top: 1.5em;
+	line-height: 2em;
+	padding-bottom: 2em;
+	color: var(--cinza-claro);
+}
+.secaoCursos--lista h3 {
+	font-size: 1.2rem;
+	padding-top: 0.6em;
+}
+.secaoCursos--lista img {
+	width: 40%;
+}
+
+img[alt="logo html e css"] {
+	width: 45%;
+}
+
+img[alt="logo django"] {
+	width: 40%;
+}
+
+/*----- CALENDÁRIO ----*/
+
+.secaoCalendar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 80vw;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.secaoCalendar h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.secaoCalendar .secaoCalendar__p {
+	font-size: 1em;
+	margin: 30px auto;
+	max-width: 80%;
+	text-align: center;
+}
+
+.secaoCalendar li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid var(--azul-escuro);
+	margin-top: 80px;
+	max-width: 425px;
+}
+
+.secaoCalendar .calendario-data {
+	display: flex;
+	width: 100%;
+	background-color: var(--azul-escuro);
+	font-size: 2em;
+	color: var(--branco);
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.secaoCalendar h3 {
+	display: flex;
+	font-size: 1.2em;
+	margin-top: 30px;
+}
+
+.secaoCalendar li p {
+	display: flex;
+	width: 80%;
+	line-height: 35px;
+	color: var(--cinza-claro);
+	text-align: center;
+	margin: 30px auto;
+}
+
+.secaoCalendar .calendario-data-rodape {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 1px solid var(--cinza-claro-transparente);
+	width: 100%;
+}
+
+.secaoCalendar .calendario-data-rodape span {
+	font-size: 2em;
+	color: var(--cinza-claro);
+	margin: 30px auto;
+}
+
+.secaoCalendar .calendario-data-rodape button {
+	display: flex;
+	width: 70%;
+	justify-content: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	border: none;
+	background-color: var(--azul-claro);
+	border-radius: 5px;
+	font-size: 1.2em;
+	color: var(--branco);
+	border: 3px solid var(--branco);
+}
+
+/*----CONTATO ---*/
+
+.secaoContato {
+	background-color: var(--cinza-claro-transparente);
+	padding-top: 5em;
+	padding-bottom: 3em;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.flex__contato {
+	width: 70%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.secaoContato h2{
+	font-size: 1.5em;
+	font-weight: bolder;
+	padding-bottom: 1.5em;
+}
+
+.contato--primeiro p {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: var(--cinza-claro);
+}
+
+.secaoContato-informacoes i{
+	color:var(--cinza-claro);
+	text-align: center;
+	margin:0 0.6rem;
+}
+
+
+.secaoContato-informacoes i {
+	width: 1rem;
+	object-fit: contain;
+}
+
+.contato--primeiro a {
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: var(--cinza-claro);
+}
+.contato--primeiro a:hover {
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: var(--cinza-claro);
+	border-radius: 4px;
+	box-shadow: 0 0 3pt 2pt var(--cinza-claro);
+}
+
+.contato--segundo, .contato--segundo form, .form-input-model, .form-input-model input,  .form-input-model textarea{
+	width: 100%;
+}
+
+.form-input-model input, .form-input-model textarea, .botato--contato{
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 4px;
+	border: 2px solid #81818135;
+	color: var(--cinza);
+	font-weight: bold;
+	font-size: 1rem;
+	padding-left: 1rem;
+
+}
+
+.form-input-model textarea {
+	height: 8rem;
+}
+
+.form-input-model input::placeholder {
+	
+	font-family: inherit;
+	font-size: 1rem;
+	color: #81818177;
+	
+}
+.form-input-model input:focus {
+	outline: none;
+	box-shadow: 0 0 0 2pt var(--azul-escuro);
+	transition: 0.5s;
+	
+}
+.form-input-model textarea::placeholder {
+	
+	padding-top:0.5rem;
+	font-family: inherit;
+	font-size: 1rem;
+	color: #81818177;
+}
+.form-input-model textarea:focus{
+	outline: none;
+	box-shadow: 0 0 0 2pt var(--azul-escuro);
+	transition: 0.5s;
+}
+
+.contato--segundo form, .form-input-model{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input[type="submit"] {
+	background-color: var(--branco);
+	align-self: flex-end;
+	margin: 0.5rem 0;
+	border-radius: 4px;
+	border: 2px solid #81818135;
+	padding: 0.8 1rem;
+	color: var(--cinza);
+	font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--cinza-claro);
+	align-self: flex-end;
+	margin: 0.5rem 0;
+	border-radius: 4px;
+	border: 2px solid #81818135;
+	padding: 0.8 1rem;
+	color: var(--cinza);
+	font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--azul-claro);
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+footer p {
+    display : none;
+}
+
+
+@media only screen and (min-width: 1023px) {
+  
+	.menu img {
+		display: none;
+	}
+
+	.large-container{ 
+		display: flex;
+	}
+
+	.header-image {
+		width: 50%;
+	}
+	
+	.logo img {
+		margin-left: 10vw;
+		max-width: 5vw;
+	}
+	
+	.topo nav {
+		display: flex;
+		width: 50%;
+	}
+
+	.topo nav ul {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.topo nav ul li {
+		display:flex;
+		margin: auto 10px;
+		font-size: 13px;
+	}
+
+	.topo li a {
+		text-decoration: none;
+		color: var(--branco);
+		border-bottom: 1px solid var(--azul-escuro);
+		padding-bottom: 3px;
+	}
+
+	.topo li a:hover {
+		border-bottom: 1px solid var(--branco);
+		border-radius: 1px;
+		padding-bottom: 3px;
+		transition: 0.5s;
+	}
+
+	.secaoDestaque {
+		width: 100vw;
+		padding-top: 150px;
+		padding-bottom: 150px;
+		background-image: url(../img/background-destaque.webp);
+		background-size: cover;
+	}
+
+	.secaoDestaque h2 {
+		font-size: 63px;
+	}
+
+	.secaoDestaque p {
+		font-size: 21px;
+	}
+
+	.secaoDestaqueFormulario {
+		max-width: 500px;
+	}
+
+	.secaoDestaqueFormulario button {
+		font-size: 14px;
+	}
+
+	.secaoDestaqueFormulario button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 2px solid var(--azul-claro);
+		cursor: pointer;
+	}
+
+	.secaoCursos--lista {
+		display: flex;
+		
+	}
+  	.secaoSobre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 19px;
+	
+	}
+	.secaoSobre h2{
+		font-size: 24px;
+	}
+	.flex {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.flex-col {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.backgroundcolor-branco {
+		width:100vw;
+		display: flex;
+		flex-flow:column nowrap;
+		align-items: center;
+
+	}
+	.primeiraCol {
+		width: 70%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.primeiraCol--texto {
+		width: 70%;
+		display: flex;
+		flex-flow: column;
+	}
+
+
+	.primeiraCol--texto button {
+		width: 30%;
+	}
+	
+	.primeiraCol--imagem figure{
+		display: flex;
+		flex-flow:column nowrap;
+		justify-content: flex-start;
+	}
+	.primeiraCol--imagem figure img {
+		width: 100%;
+		object-fit: contain;
+	}
+	
+
+	.backgroundcolor-cinza {
+		width: 100vw;
+		background-color: var(--cinza-claro-transparente);
+		display: flex;
+		flex-flow:column nowrap;
+		align-items: center;
+	}
+	.segundaCol{
+		width: 70%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.segundaCol--imagem {
+		width: 50%;
+	}
+	.segundaCol--imagem figure{
+		display: flex;
+		flex-flow:column nowrap;
+		align-items:flex-start;
+	}
+	.segundaCol--imagem figure img{
+		width: 55%;
+	}
+	
+
+	.segundaCol--texto h2{
+		padding-top:0em;
+
+	
+	}
+	.segundaCol--texto {
+		width: 50%;
+		
+	}
+
+	/*---CURSOS---*/
+
+	.secaoCursos{
+		width: 100vw;
+	}
+	.secaoCursos p {
+		font-size: 19px;
+	}
+	.secaoCursos h2{
+		font-size: 24px;
+	}
+
+	.secaoCursos--lista ul {
+		width:100vw;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.secaoCursos--lista li {
+		width: 28%;
+	}
+	
+	.secaoCursos h3 {
+		font-size: 19px;
+	}
+
+	.secaoCursos li p {
+		font-size: 15px;
+	}
+
+  	.calendario {
+		display: flex;
+		flex-direction: row;
+		width: 80vw;
+		justify-content: center;
+		padding-left: 20px;
+	}
+
+	.calendario-data {
+		font-size: 36px;
+	}
+
+	.calendario li {
+		width: 28em;
+		margin-right: 20px;
+	}
+
+	.calendario li h3 {
+		font-size: 19px;
+	}
+
+	.calendario li p {
+		font-size: 15px;
+	}
+
+	.calendario .calendario-data-rodape button {
+		font-size: 32px;
+		max-width: 150px;
+	}
+
+	.calendario-data-rodape button:hover {
+		background-color: var(--branco);
+		color: var(--azul-claro);
+		border: 3px solid var(--azul-claro);
+		cursor: pointer;
+	}
+
+	.secaoContato {
+		margin-top: 80px;
+	}
+
+	.flex__contato {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+	}
+
+	.flex__contato h2  {
+	width: 100%;
+	text-align: center;
+	}
+
+	.contato--primeiro {
+		max-width: 45%;
+	}
+
+	.contato--segundo {
+		max-width: 45%;
+	}
+
+	.flex__contato form {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+	.form-input-model {
+		width: 45%;
+	}
+
+	div#mensagem {
+		width: 100%;
+	}
+
+	.contato--segundo .botao--contato {
+		margin-left: 93.5%;
+	}
+
+	.contato--segundo .botao--contato:hover {
+		margin-left: 93.5%;
+		cursor: pointer;
+	}
+
+	footer p{
+		display: block;
+		color: var(--cinza-claro);
+	}
+
+	footer p a{
+		text-decoration: none;
+	}
+
+	footer a:visited {
+		color: var(--azul-claro);
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}

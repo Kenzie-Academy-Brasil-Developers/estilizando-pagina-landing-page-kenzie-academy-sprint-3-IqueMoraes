@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="icon-96x96.webp">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
@@ -15,10 +19,16 @@
 
     <div class="large-container">
       <!-- LOGO -->
-      <figure>
-        <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
-      </figure>
+      <div class="header-image">
+        <figure class="logo">
+          <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
+          <figcaption>Logo Kenzie Academy</figcaption>  
+        </figure>
+
+        <figure class="menu">
+          <img src="assets/img/icons8-menu-rounded-30.png" alt="Menu Logo">
+        </figure>
+      </div>
 
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
@@ -33,7 +43,7 @@
   </header>
 
   <!-- PÁGINA INICIAL -->
-  <main class="inicial">
+  <!-- <main class="inicial"> -->
 
     <!-- ÁREA DE DESTAQUE -->
     <section class="secaoDestaque">
@@ -53,9 +63,12 @@
     <section class="secaoSobre">
 
       <article class="flex">
+      <!-- SOBRE PARTE 1 -->
+      <div class="backgroundcolor-branco">
+      <div class="flex-col primeiraCol">
         
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="primeiraCol--texto">
 
           <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
@@ -68,39 +81,47 @@
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="primeiraCol--imagem">
 
           <figure>
-            <img src="assets/img/python.png" alt="python">
+            <img src="assets/img/python.png" alt="python" class="pySobre">
             <figcaption>python</figcaption>  
           </figure>      
 
         </div>
+      </div>
+      </div>
 
-        <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+      <!-- SOBRE PARTE 2 -->
+      <div class="backgroundcolor-cinza">
+        <div class="flex-col segundaCol">
 
-            <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
-            </figure>      
-  
-          </div>
+                <!-- COLUNA ESQUERDA -->
+                <div class="segundaCol--imagem">
 
-        <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+                    <figure>
+                      <img src="assets/img/JavaScript-logo.png" alt="Java Script" class="jsSobre">
+                      <figcaption>Java Script</figcaption>  
+                    </figure>      
+          
+                </div>
 
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
-            <ul>
-                <li>The standard Lorem Ipsum passage, used since the 1500s</li>
-                <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-                <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-            </ul>
+                <!-- COLUNA DIREITA -->
+                
+                    <div class="segundaCol--texto">
 
+                        <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+                        <ul>
+                            <li>The standard Lorem Ipsum passage, used since the 1500s</li>
+                            <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
+                            <li>1914 translation by H. Rackham</li>
+                            <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
+                            <li>1914 translation by H. Rackham</li>
+                        </ul>
+
+                    </div>
         </div>
-
+      </div>
         
 
       </article>
@@ -112,14 +133,17 @@
 
       <article>
 
+        <div class="secaoCursos--titulo">
         <h2>COURSES</h2>
         <p>What we offer</p>
+        </div>
 
         <!-- LISTA DE CURSOS -->
+        <div class="secaoCursos--lista">
         <ul>
         
           <li>
-            <img src="assets/img/html-css.png" alt="">
+            <img src="assets/img/html-css.png" alt="logo html e css">
             <h3>Html/Css</h3>
             <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
@@ -143,7 +167,7 @@
           </li>
 
           <li>
-            <img src="assets/img/dj.png" alt="">
+            <img src="assets/img/dj.png" alt="logo django">
             <h3>Django</h3>
             <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
@@ -155,6 +179,7 @@
           </li>
           
         </ul>
+        </div>
 
       </article>
 
@@ -163,7 +188,7 @@
     <section class="secaoCalendar">
 
       <h2>SCHEDULE</h2>
-      <p>Lorem ipsum dolor sit schedule</p>
+      <p class="secaoCalendar__p">Lorem ipsum dolor sit schedule</p>
 
       <!-- LISTA CALENDÁRIO -->
       <ul class="calendario">
@@ -173,7 +198,7 @@
           <h3>HTML/CSS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
-            <span>7mp</span>
+            <span>7pm</span>
             <button>Sign Up</button>
           </div>
         </li>
@@ -183,7 +208,7 @@
           <h3>JavaScript</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
-            <span>7mp</span>
+            <span>7pm</span>
             <button>Sign Up</button>
           </div>
         </li>
@@ -193,7 +218,7 @@
           <h3>Python</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
-            <span>7mp</span>
+            <span>7pm</span>
             <button>Sign Up</button>
           </div>
         </li>
@@ -204,19 +229,22 @@
 
     <section class="secaoContato">
 
-      <div class="flex">
+      <div class="flex__contato">
+        
+        <h2>CONTACT</h2>
 
         <!-- COLUNA LADO ESQUERDO -->
-        <div class="flex-col">
+        <div class="contato--primeiro">
+          
           
           <div class="secaoContato-informacoes">
           
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li><i class="fas fa-map-marker-alt"></i><a href="#" class="local">Chicago, US</a> </li>
+              <li><i class="fas fa-mobile-alt"></i><a href="tel:001515151515">+00 1515151515</a></li>
+              <li><i class="fas fa-envelope"></i><a href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
@@ -224,28 +252,27 @@
         </div>
 
         <!-- COLUNA LADO DIRETO -->
-        <div class="flex-col">
+        <div class="contato--segundo">
           
-          <h2>Contact</h2>
           
           <form action="">
 
             <div class="form-input-model">
-              <label for="nome">Nome</label>
+              <label for="nome" hidden >Nome</label>
               <input type="text" placeholder="Name" id="nome" name="nome">
             </div>
 
             <div class="form-input-model">
-              <label for="email">E-mail</label>
+              <label for="email" hidden >E-mail</label>
               <input type="text" placeholder="E-mail" id="email" name="email">
             </div>
 
-            <div class="form-input-model">
-              <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+            <div class="form-input-model" id="mensagem">
+              <label for="mensagem" hidden >Mensagem</label>
+              <textarea name="mensagem" placeholder="Comment"></textarea>
             </div>
 
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" class="botao--contato">
 
           </form>
 
@@ -259,10 +286,9 @@
 
   <footer>
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
+    <a href="#"><i class="fas fa-chevron-up"></i> </a>
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
 </html>
-
-
